@@ -29,7 +29,7 @@ export default {
         chrome.notifications.create("", {
           type: "basic",
           title: "Error",
-          message: "服务器错误",
+          message: "服务器错误, 冯叔的服务器傲娇了",
           iconUrl: "img/error.jpg"
         })
       }
@@ -38,7 +38,7 @@ export default {
         chrome.notifications.create("", {
           type: "basic",
           title: "Error",
-          message: "网络错误",
+          message: "网络错误，来到了没有网的荒野？",
           iconUrl: "img/error.jpg"
         })
     })
