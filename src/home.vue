@@ -26,9 +26,21 @@ export default {
       if (res.success == 0) {
         store.updateData(res.data)
       } else {
+        chrome.notifications.create("", {
+          type: "basic",
+          title: "Error",
+          message: "服务器错误",
+          iconUrl: "img/error.jpg"
+        })
       }
     }).catch(function(error){
       console.log(error)
+        chrome.notifications.create("", {
+          type: "basic",
+          title: "Error",
+          message: "网络错误",
+          iconUrl: "img/error.jpg"
+        })
     })
   },
   data () {
