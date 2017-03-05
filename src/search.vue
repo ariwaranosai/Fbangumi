@@ -18,7 +18,7 @@
         <f7-accordion-content>
             <f7-list accordion>
                 <f7-list-item class="needed" v-for="(url, site) in bgm.url">
-                    <f7-link href="url" external="" target="view_window"> 
+                    <f7-link :href="url" external="" target="view_window"> 
                         {{ line(bgm.update_time[site], site) }}
                     <f7-link>
                 </f7-list-item>
